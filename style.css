@@ -53,6 +53,11 @@ h1{
     font-weight: bold;
 
 }
+.right h1 {
+    margin-bottom: 30px; /* Increase this value to create more space */
+    text-align: center; /* Centers the "Contact me!" text */
+}
+
 
 h1:hover{
     text-decoration: underline;
@@ -69,11 +74,12 @@ h1:hover{
     top: 50px; /* Adjust this value to position from top */
 }
 
-.social-links {
+.social-links a {
     display: flex;
-    flex-direction: column;
-    gap: 15px;
     align-items: center;
+    text-decoration: none;
+    color: black;
+    gap: 10px; /* Creates space between icon and text */
 }
 
 .social-icon {
@@ -81,6 +87,12 @@ h1:hover{
     height: 30px;
     transition: transform 0.2s;
 }
+
+/* Optional: Style the text */
+.social-text {
+    font-size: 18px;
+}
+
 
 .social-icon:hover {
     transform: scale(1.1);
