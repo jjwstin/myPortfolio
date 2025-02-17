@@ -1,0 +1,89 @@
+@font-face {
+    font-family: 'monaco';
+    src: url('./assets/monaco.ttf') format('truetype');
+}
+body {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 5vh;
+    font-family: 'monaco';
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 20%;
+    display: flex;
+    flex-direction: column; /* Changes to column layout */
+    align-items: center; /* Centers items horizontally */
+    gap: 20px; /* Adds space between images */
+}
+
+.chill, .chill2 {
+    width: 80%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.middle {
+    width: 60%;
+    height: 100vh;
+    border: solid 1px black;
+    padding: 0 40px; /* Adds 40px padding on left and right */
+    box-sizing: border-box; /* Ensures padding doesn't affect overall width */
+}
+
+.chill {
+    width: 80%; /* Reduces the image width to 80% of its container */
+    max-width: 300px; /* Sets a maximum width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Optional: adds rounded corners */
+}
+.right{
+    width: 20%;
+}
+
+p{
+    font-size: 25px;
+}
+
+h1{
+    margin-bottom: -10px;
+    font-weight: bold;
+
+}
+
+h1:hover{
+    text-decoration: underline;
+}
+
+.right {
+    width: 20%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed; /* This fixes the icons in place */
+    right: 0; /* This aligns to the right edge */
+    top: 50px; /* Adjust this value to position from top */
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
